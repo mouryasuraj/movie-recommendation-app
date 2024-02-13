@@ -1,9 +1,13 @@
-
+import { signOut } from "firebase/auth"
+import { auth } from "../utils/firebase"
 
 const Browse = () => {
+  const handleSignOut = () => {
+    signOut(auth)
+  }
   return (
     <div>
-      Browse
+      <button onClick={handleSignOut}>signButton</button>
     </div>
   )
 }
