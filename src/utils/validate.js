@@ -15,7 +15,7 @@ export const validateForm = (name, email, password) => {
 
     if (!isNameValid) return 'Please enter a valid name';
     if (!isEmailValid) return 'Please enter a valid email'
-    if (!isPasswordValid) return 'Password must contain atleast one capital, one small, one number and one specail character'
+    if (!isPasswordValid) return 'Password must contain atleast one capital, one small, one number and one special character'
 
     return null;
 }
