@@ -41,10 +41,10 @@ const useLogin = () => {
                     const user = userCredential.user
                     updateProfile(user, {
                         displayName: name.current.value
-                    }).then(()=>{
-                        const {uid, email, displayName} = auth.currentUser
-                        dispatch(addUser({uid, email, displayName}))
-                        navigate('/browser')
+                    }).then(() => {
+                        const { uid, email, displayName } = auth.currentUser
+                        dispatch(addUser({ uid, email, displayName }))
+                        navigate('/browse')
                     })
                 })
                 .catch(() => {
